@@ -99,6 +99,8 @@ public class RoundedImageView extends ImageView {
         canvas.drawBitmap(sbmp, rect, rect, paint);
 
         circlePaint = new Paint();
+
+        circlePaint.setShadowLayer(30, 0.0f, 15, Color.parseColor("#8BC34A"));
         circlePaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         circlePaint.setColor(Color.rgb(255, 255, 255));
         circlePaint.setStyle(Paint.Style.STROKE);

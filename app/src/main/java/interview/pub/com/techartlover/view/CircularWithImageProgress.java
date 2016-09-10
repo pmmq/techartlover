@@ -19,7 +19,7 @@ import android.view.View;
 import interview.pub.com.techartlover.R;
 import interview.pub.com.techartlover.helper.ConvertUtils;
 
-public class HeartCircularProgress extends View {
+public class CircularWithImageProgress extends View {
     private Paint finishedPaint;
     private Paint unfinishedPaint;
     private Paint innerCirclePaint;
@@ -75,15 +75,15 @@ public class HeartCircularProgress extends View {
     private static final String INSTANCE_UNFINISHED_STROKE_WIDTH = "unfinished_stroke_width";
     private static final String INSTANCE_BACKGROUND_COLOR = "inner_background_color";
 
-    public HeartCircularProgress(Context context) {
+    public CircularWithImageProgress(Context context) {
         this(context, null);
     }
 
-    public HeartCircularProgress(Context context, AttributeSet attrs) {
+    public CircularWithImageProgress(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public HeartCircularProgress(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CircularWithImageProgress(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         default_text_size = ConvertUtils.sp2px(getResources(), 18);

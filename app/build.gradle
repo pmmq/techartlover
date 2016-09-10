@@ -14,11 +14,11 @@ android {
 
     buildTypes {
         debug{
-            buildConfigField "String", "SERVICE_URL" , "\"http://techartlove.com\""
+            buildConfigField "String", "SERVICE_URL" , "\"http://techartlove.com/\""
         }
 
         release{
-            buildConfigField "String", "SERVICE_URL" , "\"http://techartlove.com\""
+            buildConfigField "String", "SERVICE_URL" , "\"http://techartlove.com/\""
         }
 
         release {
@@ -32,12 +32,13 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0'
-
+    compile 'com.android.support:design:24.0.0'
 
     //GSON
     compile 'com.google.code.gson:gson:2.7'
     //RETORFIT HTTP PROTOCOL
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     //PICASSO
     compile 'com.squareup.picasso:picasso:2.5.2'
     // CIRCULAR PROGRESS
@@ -45,4 +46,7 @@ dependencies {
     // Butter Kinfe
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //circle image view
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
 }
